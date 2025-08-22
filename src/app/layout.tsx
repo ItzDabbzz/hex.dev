@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hex.dev - Portfolio",
-  description: "lazy backend/frontend developer & open source enthusiast",
+  title: "Hexdev.wtf - Portfolio",
+  description: "lazy developer",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
