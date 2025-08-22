@@ -13,15 +13,16 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   height: 100%;
   width: 100%;
+  background: #000;
 }
 
 body {
-  background: #000;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
+  background: #000 !important;
+  color: #fff !important;
+  font-family: 'Inter', sans-serif !important;
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
@@ -42,6 +43,7 @@ body::before {
               radial-gradient(circle at 80% 20%, rgba(67, 81, 119, 0.1) 0%, transparent 50%), 
               radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
   z-index: -2;
+  pointer-events: none;
 }
 
 #__next {
@@ -51,4 +53,5 @@ body::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }

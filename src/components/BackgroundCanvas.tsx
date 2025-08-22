@@ -6,7 +6,7 @@ interface BackgroundCanvasProps {
   className?: string;
 }
 
-export default function BackgroundCanvas({ className = "fixed top-0 left-0 w-full h-full -z-10 pointer-events-none" }: BackgroundCanvasProps) {
+export default function BackgroundCanvas({ className = "fixed top-0 left-0 w-full h-full pointer-events-none" }: BackgroundCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
