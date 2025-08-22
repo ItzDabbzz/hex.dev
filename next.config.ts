@@ -2,9 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   experimental: {
-    optimizeCss: true,
+    optimizeCss: true, // Disable this to avoid critters dependency issue
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",

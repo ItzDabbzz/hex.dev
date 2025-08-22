@@ -10,6 +10,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "critters": "^0.0.25",
     "highcharts": "^12.3.0",
     "highcharts-react-official": "^3.2.2",
     "next": "15.5.0",
