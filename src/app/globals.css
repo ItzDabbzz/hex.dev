@@ -16,14 +16,14 @@
 html {
   height: 100%;
   width: 100%;
-  background: #000;
+  background: #000 !important;
 }
 
 body {
   background: #000 !important;
   color: #fff !important;
   font-family: 'Inter', sans-serif !important;
-  min-height: 100vh;
+  min-height: 100vh !important;
   overflow-x: hidden;
   position: relative;
   display: flex;
@@ -54,4 +54,28 @@ body::before {
   align-items: center;
   justify-content: center;
   background: transparent;
+}
+
+/* Backup styles for LinkButton in case Tailwind doesn't load */
+.link-button-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #c0caf5;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.link-button-fallback:hover {
+  transform: translateX(3px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
 }
