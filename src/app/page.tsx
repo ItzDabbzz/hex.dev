@@ -5,7 +5,6 @@ import EntryScreen from '@/components/EntryScreen';
 import Toast from '@/components/Toast';
 import Header from '@/components/Header';
 import CanvasChart from '@/components/CanvasChart';
-import GlobalStyles from '@/components/GlobalStyles';
 import ClientOnly from '@/components/ClientOnly';
 import { useToast } from '@/hooks/useToast';
 import { useBackgroundMusic } from '@/hooks/useBackgroundMusic';
@@ -24,8 +23,6 @@ export default function Home() {
 
   return (
     <>
-      <GlobalStyles />
-      
       <ClientOnly>
         <BackgroundCanvas />
 
